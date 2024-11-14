@@ -1,0 +1,32 @@
+<!-- Pseudo element selector is used to select the specific part of the html element.. It is represented by double colon(::) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+  h1::first-letter{
+   color: blue;
+  }
+  h1::first-line{
+    color: brown;
+  }
+  p::before{
+    content: "Paragraph begins";
+  }
+  p::after{
+    content: "Paragraph ends";
+  }
+  P::selection{
+    background-color: rosybrown;
+    color: blue;
+  }
+ </style>
+  <title>PseudoElement Selector</title>
+</head>
+<body>
+  <h1>This is Pseudo Element </h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, incidunt libero. Ipsa sed est praesentium, deserunt eaque, perferendis tempore voluptatem porro illum vitae dicta, facilis laborum nostrum molestias obcaecati aspernatur.
+  Molestiae ducimus itaque veritatis eligendi eum cum, a distinctio obcaecati explicabo maxime similique minima dolore harum nihil nisi ad odit esse. Quos modi consequatur mollitia aspernatur provident iure? Esse, nostrum!
+  Unde assumenda molestias, officia quas voluptatibus distinctio nostrum architecto provident dolorem cumque consequatur mollitia, hic modi adipisci necessitatibus excepturi voluptates iste, repellat nesciunt deserunt. Aliquam esse vel vitae dolorem laudantium.
+  Magni magnam quaerat rerum, tenetur aperiam id exercitationem pariatur sapiente, ratione doloremque soluta unde tempore mollitia, quo enim voluptatibus vel laboriosam? Rerum rem doloribus odio assumenda placeat at, nemo quidem.</p>
+</body>
+</html>
