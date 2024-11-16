@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../fontawesome-free-6.6.0-web/css/all.min.css">
+  <style>
+    fieldset{
+      width: 600px;
+      height: 450px;
+      text-align: center;
+      margin-left: 300px;
+      border: white;
+      background-color: rgb(183, 198, 241);
+    }
+    legend{
+      background-color: rgb(233, 193, 240);
+      color: black;
+      padding: 10px;
+      border-radius: 0px 10px;
+    }
+    table{
+      height: 200px;
+      margin-top: 100px;
+      padding: 20px;
+      background-color: aliceblue;
+      color: rgb(1, 1, 20);
+      font-weight: bold;
+      border-radius: 25px 25px;
+    }
+    .input{
+      background-color: rgb(233, 193, 240);
+       border-radius: 7px 3px;
+    }
+    .button{
+      background-color: rgb(233, 193, 240);
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 40px;
+      gap: 10px;
+    }
+    .button:hover{
+      color: crimson;
+      background-color: blueviolet;
+
+    }
+  </style>
+  <title>Login Form</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>LoginForm</legend>
+      <table align="center">
+        <tr>
+          <td>UserName</td>
+          <td><input type="text" placeholder="Enter the username" class="input"></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" placeholder="Enter the password" class="input"></td>
+        </tr>
+        <tr>
+         <td> <button type="submit" class="button">Submit</button></td>
+         <td> <button type="reset" class="button">Reset</button></td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+</body>
+</html>
