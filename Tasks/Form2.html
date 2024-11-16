@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    form{
+      width: 600px;
+      margin-left: 290px;
+    }
+    button{
+      padding: 10px; 
+    }
+  </style>
+  <title>Registration Form</title>
+</head>
+<body>
+  <form action="">
+    <fieldset align="center" style="border: none;">
+      <legend style="font-weight: bold;">Edit Your Details</legend>
+      <table align="center" cellPadding="10px" cellSpacing="5px">
+        <tr>
+          <td><label for="username">Username:</label></td>
+          <td><input type="text" ></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" ></td>
+        </tr>
+        <tr>
+          <td><label for="fullname">Full Name:</label></td>
+          <td><input type="text" ></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" ></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone Number:</label></td>
+          <td><input type="tel"></td>
+        </tr>
+        <tr>
+          <td><label for="address">Address:</label></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td><label for="branch">Hotel Branch:</label></td>
+          <td>
+            <select id="branch" name="branch" required>
+              <option value="">Select a branch</option>
+              <option value="Bhubaneswar">Bhubaneswar</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Chennai">Chennai</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <button type="submit" style="margin-right: 40px;">Update</button>
+      <button type="reset">Delete</button>
+    </fieldset>
+  </form>
+</body>
+</html>
