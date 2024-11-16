@@ -4,12 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navbar</title>
+  <link rel="stylesheet" href="../fontawesome-free-6.6.0-web/css/all.min.css">
   <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
     div {
       display: flex;
       align-items: center; 
       background-color: black;
-      padding: 15px 20px;
+      padding: 4px 8px ;
     }
     .logo {
       color: white;
@@ -27,7 +32,7 @@
 
     
     div > a {
-      padding: 10px 20px;
+      padding: 5px 10px;
       color: white;
       text-decoration: none;
       background-color: orange;
@@ -42,18 +47,19 @@
       box-shadow: 0 0 20px brown;
     }
   </style>
+ 
 </head>
 <body>
   <div>
     <p class="logo">JSpiders</p>
     <div class="links">
-      <a href="">Home</a>
-      <a href="">Course</a>
-      <a href="">Batches</a>
-      <a href="">Corporates</a>
-      <a href="">Contacts</a>
-      <a href="">Placements</a>
-      <a href="">Enquiry</a>
+      <a href="" ><i class="fa-solid fa-house"></i>Home</a>
+      <a href=""> <i class="fa-solid fa-book-open"></i>Course</a>
+      <a href=""><i class="fa-solid fa-calendar-days"></i>Batches</a>
+      <a href=""><i class="fa-solid fa-cubes"></i>Corporates</a>
+      <a href=""><i class="fa-regular fa-address-book"></i>Contacts</a>
+      <a href=""><i class="fa-solid fa-people-group"></i>Placements</a>
+      <a href=""><i class="fa-regular fa-pen-to-square"></i>Enquiry</a>
     </div>
   </div>
 </body>
