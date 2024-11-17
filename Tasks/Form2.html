@@ -1,37 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    form{
-      width: 600px;
-      margin-left: 290px;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    button{
-      padding: 10px; 
+
+    body {
+      background-image: linear-gradient(to right bottom, #e8deed, #cbe2ff, #7eefff, #42f8e8, #8ff696);
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 10px;
     }
+
+    form {
+      max-width: 600px;
+      width: 100%;
+      background: black;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      color: white;
+    }
+
+    fieldset {
+      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    legend {
+      font-weight: bold;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-spacing: 10px;
+    }
+
+    td {
+      padding: 5px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    button[type="reset"] {
+      background-color: #f44336;
+      color: white;
+    }
+    
   </style>
-  <title>Registration Form</title>
+  <title> Registration Form</title>
 </head>
 <body>
   <form action="">
-    <fieldset align="center" style="border: none;">
-      <legend style="font-weight: bold;">Edit Your Details</legend>
-      <table align="center" cellPadding="10px" cellSpacing="5px">
+    <fieldset>
+      <legend>Edit Your Details</legend>
+      <table>
         <tr>
           <td><label for="username">Username:</label></td>
-          <td><input type="text" ></td>
+          <td><input type="text"></td>
         </tr>
         <tr>
           <td><label for="password">Password:</label></td>
-          <td><input type="password" ></td>
+          <td><input type="password"></td>
         </tr>
         <tr>
           <td><label for="fullname">Full Name:</label></td>
-          <td><input type="text" ></td>
+          <td><input type="text"></td>
         </tr>
         <tr>
           <td><label for="email">Email:</label></td>
-          <td><input type="email" ></td>
+          <td><input type="email"></td>
         </tr>
         <tr>
           <td><label for="phone">Phone Number:</label></td>
@@ -54,7 +127,7 @@
           </td>
         </tr>
       </table>
-      <button type="submit" style="margin-right: 40px;">Update</button>
+      <button type="submit">Update</button>
       <button type="reset">Delete</button>
     </fieldset>
   </form>
