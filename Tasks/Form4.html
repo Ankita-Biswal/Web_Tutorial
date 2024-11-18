@@ -3,7 +3,7 @@
   <title>Registration form</title>
   <style>
     body{
-      background-image: linear-gradient(to right bottom, #e8deed, #cbe2ff, #7eefff, #42f8e8, #8ff696);
+      background-image: linear-gradient(to right bottom, #8a49aa, #cbe2ff, #7eefff, #42f8e8, #8ff696);
     }
     fieldset{
       margin-left: 10px;
@@ -18,13 +18,16 @@
       background-color: black;
       border-radius: 25px;
     }
-   
+    .button-row {
+    text-align: center; 
+  }
+
   </style>
 </head>
 <body>
   <form action="">
     <fieldset>
-      <legend align="center">Student Information</legend>
+      <legend align="center" style="font-weight: bold;">Student Information</legend>
       <table>
       <tr>
         <td><label for="">FirstName</label></td>
@@ -109,8 +112,8 @@
         <td><input type="file"></td>
       </tr>
       <tr>
-        <td><button type="submit">Submit</button></td>
-        <td><button type="reset">Reset</button></td>
+        <td><button type="submit" style="background-color: rgb(108, 246, 108);">Submit</button></td>
+        <td><button type="reset" style="background-color: red;">Reset</button></td>
       </tr>
       </table>
     </fieldset>
