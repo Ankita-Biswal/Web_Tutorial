@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <link rel="stylesheet" href="../fontawesome-free-6.6.0-web/css/all.min.css">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      }
+    div {
+      display: flex;
+      align-items: center; 
+      background-color: black;
+      padding: 4px 8px ;
+    }
+    .logo {
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+      margin-right: auto; 
+    }
+    .logo::first-letter{
+      color: orange;
+    }
+    .links {
+      display: flex;
+      gap: 30px; 
+    }
+
+    
+    div > a {
+      padding: 5px 10px;
+      color: white;
+      text-decoration: none;
+      background-color: orange;
+      border-radius: 40px;
+      
+    }
+
+   
+    a:hover {
+      background-color: darkorchid;
+      color: darkblue;
+      box-shadow: 0 0 20px brown;
+    }
+    .container{
+      margin-top: 60px;
+      height: 500px;
+     width:400px;
+     margin-left: 380px;
+      background-color: rgb(226, 173, 231);
+    }
+  </style>
+ 
+</head>
+<body style="background-color: black;">
+  <div>
+    <p class="logo">JSpiders</p>
+    <div class="links">
+      <a href="" ><i class="fa-solid fa-house"></i>Home</a>
+      <a href=""> <i class="fa-solid fa-book-open"></i>Course</a>
+      <a href=""><i class="fa-solid fa-calendar-days"></i>Batches</a>
+      <a href=""><i class="fa-solid fa-cubes"></i>Corporates</a>
+      <a href=""><i class="fa-regular fa-address-book"></i>Contacts</a>
+      <a href=""><i class="fa-solid fa-people-group"></i>Placements</a>
+      <a href=""><i class="fa-regular fa-pen-to-square"></i>Enquiry</a>
+    </div>
+  </div>
+
+  <div class="container">
+   <h1></h1>
+  </div>
+</body>
+</html>
