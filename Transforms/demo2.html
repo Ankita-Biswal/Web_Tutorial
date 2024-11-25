@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: rgb(245, 243, 242);
+  }
+  .container{
+    margin-top: 150px;
+    position: relative;
+    left:500px;
+    top: 100px;
+    width: 200px;
+
+  }
+  .items{
+    border-radius: 20px;
+     height :150px;
+     width:150px;
+     position: absolute;
+     top: 0px;
+     left:0px;
+     transition: all 3s linear 0s;
+  }
+  .one{
+    background-color: pink;
+  }
+  .two{
+    background-color: greenyellow;
+  }
+  .three{
+    background-color: blueviolet;
+  }
+  .four{
+    background-color: violet;
+  }
+  .five{
+    background-color: crimson;
+  }
+
+  .container:hover .one{
+   transform: translateX(200px)rotate(360deg);
+  }
+  .container:hover .two{
+    transform: translateX(-200px)rotate(360deg);
+  }
+  .container:hover .three{
+    transform: translateY(200px)rotate(360deg);
+  }
+  .container:hover .four{
+    transform: translateY(-200px)rotate(360deg);
+  }
+ </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+  <div class="items one "></div>
+  <div class="items two"></div>
+  <div class="items three"></div>
+  <div class="items four"></div>
+  <div class="items five"></div>
+  </div>
+</body>
+</html>
