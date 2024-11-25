@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body{
+      background-color: black;
+    }
+.container{
+  height: 400px;
+  width: 400px;
+  border:2px solid black;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px red;
+  margin: 100px auto;
+  overflow: hidden;
+  position: relative;
+}
+img{
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  transition: all 2s linear 0s;
+}
+.container:hover img{
+  transform: scale(1.5);
+}
+.items{
+  transition: all 2s linear 2s;
+  border: 2px solid black;
+}
+.container:hover .left{
+  transform: translateX(400px) rotate(360deg);
+}
+.container:hover .right{
+  transform: translateX(-400px)rotate(360deg);
+}
+.items{
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  background-color: rgb(9, 48, 17);
+  position: absolute;
+  top:0px;
+}
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <img src="../image/jaga.webp" alt="">
+    <div class="items left"></div>
+    <div class="items right"></div>
+  </div>
+</body>
+</html>
