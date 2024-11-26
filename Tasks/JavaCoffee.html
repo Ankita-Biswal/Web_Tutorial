@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaJam Coffee House</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: bisque;
+    }
+
+    .sidebar {
+      height: 100vh; 
+      width: 200px;
+      background-color: rgb(32, 15, 3);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      position: fixed; 
+    }
+
+    .links a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: rgb(171, 165, 161);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 26px;
+      transition: color 0.3s ease;
+    }
+
+    .links a:hover {
+      color: white;
+    }
+
+    header {
+      margin-left: 200px; 
+      padding: 20px;
+      background-color:rgb(103, 84, 84);
+      text-align: center;
+    }
+
+    section {
+      margin: 20px;
+      margin-left: 220px;
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size: 2.2rem;
+    }
+    section p{
+      margin-left: 20px;
+    }
+    .form {
+      margin-top: 20px;
+    }
+
+    .form table {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 20px; 
+      border-spacing: 10px;
+    }
+
+    .form input,
+    .form textarea,
+    .form button {
+      
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form button {
+      background-color: rgb(177, 188, 243);
+      color: black;
+      border: 1px solid black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form button:hover {
+      background-color: rgb(50, 25, 10);
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      padding: 10px;
+       background-color:rgb(103, 84, 84);
+    }
+
+    footer p {
+      margin: 10px 0;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="sidebar">
+    <div class="links">
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Music</a>
+      <a href="#">Jobs</a>
+    </div>
+  </div>
+
+ 
+  <header>
+    <h1>JavaJam Coffee House</h1>
+  </header>
+
+  
+  <section>
+    <h2>Jobs at JavaJam</h2>
+    <p>Want to work at JavaJam? Fill out the form below to start your application.</p>
+    <p>Required fields are marked with an asterisk(*).</p>
+
+    <div class="form">
+      <form action="#">
+        <table>
+          <tr>
+            <td>*Name:</td>
+            <td><input type="text" class="input" required></td>
+          </tr>
+          <tr>
+            <td>*Email:</td>
+            <td><input type="email" class="input" required></td>
+          </tr>
+          <tr>
+            <td>*Experience:</td>
+            <td><textarea name="message" class="input" required></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="submit" class="button">Apply Now</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <p>Copyright &copy; 2016 <b>JavaJam Coffee House</b><br>
+      abacccsd1234@gmail.com
+    </p>
+  </footer>
+</body>
+</html>
