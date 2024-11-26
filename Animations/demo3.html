@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background-color: black;
+    }
+    div{
+      height: 100px;
+      width: 100px;
+      border: 2px solid black;
+      border-radius: 50%;
+      animation-name:moving;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-duration: alternate;
+    }
+    @keyframes moving {
+      0%,100%{
+        top: 0px;
+        left: 0px;
+        position: relative;
+        background-color: royalblue;
+      }
+      25%{
+        top: 0px;
+        left: 400px;
+        position: relative;
+        background-color: rgb(16, 46, 18);
+      }
+      50%{
+        top: 300px;
+        left: 400px;
+        position: relative;
+        background-color: rgb(225, 188, 65);
+      }
+      75%{
+        top: 300px;
+        left: 0px;
+        position: relative;
+        background-color: rgb(192, 101, 231);
+      }
+     
+     
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div>
+
+  </div>
+</body>
+</html>
