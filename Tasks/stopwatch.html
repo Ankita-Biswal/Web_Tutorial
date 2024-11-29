@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    .card-header {
+      background-color: black;
+      height: 40px;
+    }
+    .card-header h5 {
+      color: white;
+      font-size: 16px;
+      margin: 0;
+      line-height: 30px;
+      text-align: center;
+    }
+    .card-body {
+      text-align: center;
+    }
+    .time-display {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .btn {
+      margin: 5px;
+    }
+  </style>
+  <title>Static Stopwatch</title>
+</head>
+<body>
+  <nav class="navbar-nav bg-dark py-4">
+   
+  </nav>
+  <div class="container-fluid">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <h5>Stopwatch</h5>
+          </div>
+          <div class="card-body">
+            <div class="time-display">00:00:00</div>
+            <div>
+              <button class="btn btn-success">Start</button>
+              <button class="btn btn-danger">Stop</button>
+              <button class="btn btn-warning">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
