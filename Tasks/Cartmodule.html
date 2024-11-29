@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../fontawesome-free-6.6.0-web/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .card {
+      width: 75%;
+      max-width: 300px;
+      margin-left: 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden; 
+    }
+
+    .card-header img {
+      width: 100%; 
+      height: auto; 
+      object-fit: cover; 
+    }
+
+    .card-body {
+      padding: .7rem;
+    }
+
+    .count-text {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .btn {
+      margin: 5px;
+    }
+
+    .card-footer {
+      background-color: #f8f9fa;
+      padding: 5px 0;
+      font-weight: bold;
+    }
+  </style>
+  <title>Product</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-dark bg-dark py-3">
+    <a href="#" class="navbar-brand text-white mx-3">Amazon</a>
+  </nav>
+
+  <div class="container mt-4">
+    <h1 class="mb-3">Cart Module</h1>
+    <p class="lead">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, nihil perspiciatis culpa voluptates, ullam dolorum laboriosam provident dolor incidunt unde assumenda quas laborum, ratione veritatis inventore velit rem quam voluptate?
+      Voluptatem et voluptate corporis facilis. Necessitatibus ab incidunt tenetur dicta provident. Vitae iusto eius assumenda laboriosam esse consectetur laborum quos magni, doloremque consequatur? Soluta inventore adipisci distinctio natus, veritatis aspernatur.
+    </p>
+    <button class="btn btn-dark">Check Out</button>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header text-center">
+            <img class="img-fluid" src="../image/download.jpg" alt="Earbuds">
+          </div>
+          <div class="card-body text-center">
+            <div class="d-flex justify-content-around mb-3">
+              <p class="count-text">Likes</p>
+              <p class="count-text">Dislikes</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <p class="count-text">8</p>
+              <p class="count-text">6</p>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-light"><i class="fas fa-thumbs-up"></i></button>
+              <button type="button" class="btn btn-light"><i class="fas fa-thumbs-down"></i></button>
+            </div>            
+          </div>
+          <div class="card-footer text-center">
+            <p>Total likes: 14</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
